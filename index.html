@@ -6,17 +6,52 @@
     <title>Students info</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-
+        <h1>ASAC</h1>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
     </header>
     <main>
-
+        <section id="container">
+            <section class="form">
+                <form id="form">
+                    <label for="email">Student Email</label><input type="email" name="email" id="email" required>
+                    <label for="phone">Student Mobil Number</label><input type="number" name="phone" id="phone" required>
+                    <label for="tuition">Tuition</label>
+                    <select name="tuition" id="tuition">
+                        <option value="100">100 JD</option>
+                        <option value="500">500 JD</option>
+                        <option value="1000">1000 JD</option>
+                    </select>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+            <section class="table">
+                <table id="info">
+                    <tr>
+                        <th>id</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Mobile</th>
+                        <th>Age</th>
+                        <th>Tuition</th>
+                    </tr>
+                </table>
+                <p id="total">Total: 0</p>
+            </section>
+        </section>
     </main>
     <footer>
-
+        &copy; All rights reserved ASAC 2021
     </footer>
     <script src="app.js"></script>
 </body>
